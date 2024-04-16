@@ -1,0 +1,210 @@
+:root{
+    --color-light: #fff;
+    --color-dark: #000;
+    --color-activ: #94CFFF;
+    --color-button: #0B0E66;
+    --color-border: #26C7EA;
+    --color-title: #0A3853;
+    --color-uk: #141414;
+    --color-backraund: rgba(43, 74, 97, 0.87);
+}
+.body{
+    font-family: 'Inter';
+    font-weight: 400;
+}
+.conteiner{
+    width: 1032px;
+    margin: 0 auto;
+    padding: 0;
+    outline: 1px dotted red;
+}
+.header-div{
+    display: flex;
+    align-items: center;
+}
+button{
+    color: var(--color-border);
+    font-weight: 400;
+    font-size: 24px;
+    background-color: var(--color-button);
+    border-top-left-radius: 44px;
+    border-bottom-right-radius: 44px;
+    border: 3px solid var(--color-border);
+}
+/* header */
+.header{
+    background-image: url(../images/back-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom: 3px solid #fff;
+}
+.link-logo{
+    display: inline-block;
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.nav-item-link{
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    color: var(--color-light);
+}
+.active-link{
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: var(--color-activ);
+}
+.header-link{
+    color: var(--color-border);
+    font-weight: 400;
+    font-size: 20px;
+    text-align: justify;
+    background-color: var(--color-button);
+    border-top-left-radius: 34px;
+    border-bottom-right-radius: 34px;
+    border: 2px solid var(--color-border);
+}
+.hero{
+    padding-top: 180px;
+    padding-bottom: 179px;
+    background-image: url(../images/hero-back.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.hero-title{
+    display: none;
+}
+.hero-navi{
+    color: var(--color-light);
+    font-weight: 400;
+    font-size: 20px;
+    width: 298px;
+}
+.hero-uk{
+    color: var(--color-light);
+    font-weight: 400;
+    font-size: 20px;
+    width: 376px;
+}
+.hero-logos{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+.citation-one{
+    color: var(--color-uk);
+    font-weight: 400;
+    font-size: 36px;
+    text-align: justify;
+    width: 1002px;
+}
+.name-one{
+    color: var(--color-dark);
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+.section-trailer{
+    padding-top: 330px;
+    padding-bottom: 331px;
+    background-image: url(../images/back-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.trailer{
+    display: none;
+}
+.trailer-button{
+    font-weight: 400;
+    font-size: 24px;
+    text-align: justify;
+}
+.learning{
+    background-image: url(../images/back-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 57px;
+    padding-bottom: 57px;
+}
+.learning-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 36px;
+    list-style: none;
+    padding: 0;
+}
+.learning-title{
+    font-family: 'Headland One';
+    color: var(--color-uk);
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+}
+.learning-item{
+    background: rgba(255, 255, 255, 0.7);
+    padding: 45px 86px 36px 82px;
+}
+.uk:nth-child(1):after{
+    content: '';
+    display: block;
+    width: 152px;
+    height: 40px;
+    background-image: url(../images/stick-right.png);
+}
+.uk:nth-child(2):after{
+    content: '';
+    display: block;
+    width: 152px;
+    height: 40px;
+    background-image: url(../images/bird-litle.png);
+}
+.uk:nth-child(3):after{
+    content: '';
+    display: block;
+    width: 152px;
+    height: 40px;
+    background-image: url(../images/stick-left.png);
+}
+.uk:nth-child(4):after{
+    content: '';
+    display: block;
+    width: 152px;
+    height: 40px;
+    background-image: url(../images/stick-right.png);
+}
+.uk:nth-child(5):after{
+    content: '';
+    display: block;
+    width: 152px;
+    height: 40px;
+    background-image: url(../images/bird-litle.png);
+}
+.uk:nth-child(6):after{
+    content: '';
+    display: block;
+    width: 152px;
+    height: 40px;
+    background-image: url(../images/stick-left.png);
+}
+.uk{
+    font-family: 'Headland One';
+    color: var(--color-uk);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    text-align: justify;
+}
+.navi{
+    font-family: 'Headland One';
+    color: var(--color-dark);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    text-align: justify;
+}
