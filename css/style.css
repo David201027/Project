@@ -12,11 +12,16 @@
     font-family: 'Inter';
     font-weight: 400;
 }
-.conteiner{
-    width: 1032px;
+.main-container{
+    position: relative;
+    width: 1440px;
     margin: 0 auto;
-    padding: 0;
-    outline: 1px dotted orangered;
+    outline: 1px dashed #0ceb17;
+}
+.container{
+    width: 1034px;
+    margin: 0 auto;
+    outline: 1px dashed tomato;
 }
 .header-div{
     display: flex;
@@ -33,14 +38,34 @@ button{
 }
 /* header */
 .header{
-    background-image: url(../images/back-header.jpg);
+    background-image: linear-gradient(to right,rgba(43, 74, 97, 0.87), rgba(43, 74, 97, 0.87)),url(../images/back-header.jpg);
     background-repeat: no-repeat;
     background-position: center;
     border-bottom: 3px solid #fff;
     padding-top: 39px;
     padding-bottom: 39px;
-    /* display: flex;
-    align-items: center; */
+    display: flex;
+    align-items: center;
+}
+.lang-list {
+    position: absolute;
+    top: 65px;
+    right: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.eng{
+    color: var(--color-light);
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+}
+.uk-head{
+    color: var(--color-light);
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
 }
 .nav{
     display: flex;
@@ -90,6 +115,16 @@ button{
     background-repeat: no-repeat;
     background-position: center;
 }
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero-button{
+    padding: 7px 28px 7px 27px;
+    margin-top: 42px;
+    width: 199px;
+}
 .hero-title{
     display: none;
 }
@@ -117,19 +152,32 @@ button{
     display: flex;
     flex-direction: column;
     justify-content: right;
+    align-items: end;
+}
+.section-citation{
+    padding-top: 75px;
+    padding-bottom: 10px;
 }
 .citation-one{
     color: var(--color-uk);
     font-weight: 400;
     font-size: 36px;
-    text-align: justify;
-    width: 1002px;
+    text-align: center;
 }
 .name-one{
     color: var(--color-dark);
     font-weight: 400;
     font-size: 24px;
     text-align: center;
+}
+.name-one::after{
+    content: '';
+    display: block;
+    width: 400px;
+    height: 120px;
+    background-image: url(../images/bird.png);
+    background-repeat: no-repeat;
+    padding-left: 316px;
 }
 .section-trailer{
     padding-top: 330px;
@@ -147,6 +195,8 @@ button{
     font-weight: 400;
     font-size: 24px;
     text-align: justify;
+    padding: 22px 17px 22px 16px;
+    margin-left: 386px;
 }
 .learning{
     background-image: url(../images/back-3.jpg);
@@ -173,48 +223,7 @@ button{
     background: rgba(255, 255, 255, 0.7);
     padding: 45px 86px 36px 82px;
 }
-.uk:nth-child(1):after{
-    content: '';
-    display: block;
-    width: 152px;
-    height: 40px;
-    background-image: url(../images/stick-right.png);
-}
-.uk:nth-child(2):after{
-    content: '';
-    display: block;
-    width: 152px;
-    height: 40px;
-    background-image: url(../images/bird-litle.png);
-}
-.uk:nth-child(3):after{
-    content: '';
-    display: block;
-    width: 152px;
-    height: 40px;
-    background-image: url(../images/stick-left.png);
-}
-.uk:nth-child(4):after{
-    content: '';
-    display: block;
-    width: 152px;
-    height: 40px;
-    background-image: url(../images/stick-right.png);
-}
-.uk:nth-child(5):after{
-    content: '';
-    display: block;
-    width: 152px;
-    height: 40px;
-    background-image: url(../images/bird-litle.png);
-}
-.uk:nth-child(6):after{
-    content: '';
-    display: block;
-    width: 152px;
-    height: 40px;
-    background-image: url(../images/stick-left.png);
-}
+
 .uk{
     font-family: 'Headland One';
     color: var(--color-uk);
@@ -222,6 +231,21 @@ button{
     font-size: 24px;
     line-height: 100%;
     text-align: justify;
+}
+.uk::after{
+    content: '';
+    display: block;
+    width: 152px;
+    height: 40px;
+}
+.uk:nth-child(1, 4):after{
+    background-image: url(../images/stick-right.png);
+}
+.uk:nth-child(2, 5):after{
+    background-image: url(../images/bird-litle.png);
+}
+.uk:nth-child(3, 6):after{
+    background-image: url(../images/stick-left.png);
 }
 .navi{
     font-family: 'Headland One';
