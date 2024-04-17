@@ -16,7 +16,7 @@
     width: 1032px;
     margin: 0 auto;
     padding: 0;
-    outline: 1px dotted red;
+    outline: 1px dotted orangered;
 }
 .header-div{
     display: flex;
@@ -37,14 +37,24 @@ button{
     background-repeat: no-repeat;
     background-position: center;
     border-bottom: 3px solid #fff;
+    padding-top: 39px;
+    padding-bottom: 39px;
+    /* display: flex;
+    align-items: center; */
 }
-.link-logo{
-    display: inline-block;
+.nav{
+    display: flex;
+    align-items: center;
 }
 .nav-list{
     display: flex;
     list-style: none;
     align-items: center;
+    gap: 38px;
+    margin-right: 212px;
+}
+.link-logo{
+    margin-right: 168px;
 }
 .nav-item-link{
     font-weight: 300;
@@ -67,6 +77,11 @@ button{
     border-top-left-radius: 34px;
     border-bottom-right-radius: 34px;
     border: 2px solid var(--color-border);
+    padding: 7px 36px 6px 36px;
+}
+.header-list{
+    display: flex;
+    align-items: center;
 }
 .hero{
     padding-top: 180px;
@@ -83,6 +98,14 @@ button{
     font-weight: 400;
     font-size: 20px;
     width: 298px;
+}
+.hero-navi::after{
+    content: '';
+    display: block;
+    width: 152px;
+    height: 40px;
+    background-image: url(../images/white.png);
+    padding-left: 53px;
 }
 .hero-uk{
     color: var(--color-light);
