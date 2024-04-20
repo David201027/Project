@@ -16,12 +16,12 @@
     position: relative;
     width: 1440px;
     margin: 0 auto;
-    outline: 1px dashed #0ceb17;
+    /* outline: 1px dashed #0ceb17; */
 }
 .container{
     width: 1034px;
     margin: 0 auto;
-    outline: 1px dashed tomato;
+    /* outline: 1px dashed tomato; */
 }
 .header-div{
     display: flex;
@@ -77,6 +77,7 @@ button{
     margin-right: 212px;
 }
 .link-logo{
+    display: flex;
     margin-right: 168px;
 }
 .nav-item-link{
@@ -126,7 +127,6 @@ button{
 .hero-link{
     display: inline-block;
     padding: 7px 28px 7px 27px;
-    margin-top: 42px;
     color: var(--color-border);
     background-color: var(--color-button);
     border: 3px solid #26c7ea;
@@ -164,11 +164,12 @@ button{
     font-weight: 400;
     font-size: 20px;
     width: 376px;
+    margin-bottom: 42px;
 }
 .hero-logos{
     display: flex;
     flex-direction: column;
-    justify-content: right;
+    /* justify-content: right; */
     align-items: end;
 }
 .section-citation{
@@ -180,12 +181,6 @@ button{
 }
 .citation{
     color: var(--color-uk);
-    font-weight: 400;
-    font-size: 36px;
-    text-align: center;
-}
-.one{
-    color: var(--color-title);
     font-weight: 400;
     font-size: 36px;
     text-align: center;
@@ -338,25 +333,50 @@ button{
     margin-bottom: 40px;
 }
 .footer{
-    padding: 35px 0;
+    padding-top: 35px;
+    padding-bottom: 25px;
     background-image: linear-gradient(to right, rgba(43, 74, 97, 0.87), rgba(43, 74, 97, 0.87)),url(../images/back-footer.jpg);
     background-repeat: no-repeat;
     background-position: center;
 }
-.footer-list{
+.adress{
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    align-items: end;
 }
 .footer-div{
     display: flex;
-    align-items: center;
+    justify-content: space-between;
 }
-.footer-nav{
+.footer-list{
+    padding-top: 44px;
+    padding-bottom: 37px;
+}
+.footer-item:not(:last-child){
+    margin-bottom: 16px;
+}
+.footer-div:not(:first-child){
     display: flex;
-    /* flex-direction: column; */
-    align-items: center;
-    /* order: 2; */
+    justify-content: right;
 }
+.footer-item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.footer-logo{
+    display: flex;
+    height: 70px;
+    margin-top: 44px;
+}
+/* .adress::before{
+    content: '';
+    display: block;
+    width: 2px;
+    height: 153px;
+    background-image: url(../images/line-after.png);
+    margin-left: 81px;
+} */
 .gmail{
     color: var(--color-light);
     font-weight: 400;
@@ -375,6 +395,5 @@ button{
     color: var(--color-light);
     font-weight: 400;
     font-size: 14px;
-    text-align: justify;
-    order: 1;
+    text-align: center;
 }
