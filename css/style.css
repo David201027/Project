@@ -169,7 +169,6 @@ button{
 .hero-logos{
     display: flex;
     flex-direction: column;
-    /* justify-content: right; */
     align-items: end;
 }
 .section-citation{
@@ -185,11 +184,19 @@ button{
     font-size: 36px;
     text-align: center;
 }
+.citation-eng{
+    color: var(--color-uk);
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    width: 1100px;
+}
 .name{
     color: var(--color-dark);
     font-weight: 400;
     font-size: 24px;
     text-align: center;
+    margin-top: 16px;
 }
 .name::after{
     content: '';
