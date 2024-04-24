@@ -16,25 +16,16 @@
     position: relative;
     width: 1440px;
     margin: 0 auto;
-    /* outline: 1px dashed #0ceb17; */
+    outline: 1px dashed #0ceb17; 
 }
 .container{
     width: 1034px;
     margin: 0 auto;
-    /* outline: 1px dashed tomato; */
+    outline: 1px dashed tomato;
 }
 .header-div{
     display: flex;
     align-items: center;
-}
-button{
-    color: var(--color-border);
-    font-weight: 400;
-    font-size: 24px;
-    background-color: var(--color-button);
-    border-top-left-radius: 44px;
-    border-bottom-right-radius: 44px;
-    border: 3px solid var(--color-border);
 }
 /* header */
 .header{
@@ -77,8 +68,10 @@ button{
     margin-right: 212px;
 }
 .link-logo{
-    display: flex;
     margin-right: 168px;
+}
+.link-logo-eng{
+    margin-right: 184px;
 }
 .nav-item-link{
     font-weight: 300;
@@ -96,11 +89,13 @@ button{
     color: var(--color-border);
     font-weight: 400;
     font-size: 20px;
-    text-align: justify;
+    text-align: center;
     background-color: var(--color-button);
     border-radius: 35px 0;
     border: 2px solid var(--color-border);
-    padding: 7px 36px 6px 36px;
+    width: 141px;
+    height: 42px;
+    padding-top: 7px;
 }
 .header-list{
     display: flex;
@@ -149,12 +144,12 @@ button{
     color: var(--color-light);
     font-weight: 400;
     font-size: 20px;
-    width: 298px;
+    width: 273px;
 }
 .hero-navi::after{
     content: '';
     display: block;
-    width: 152px;
+    width: 142px;
     height: 40px;
     background-image: url(../images/white.png);
     margin-left: 53px;
@@ -163,7 +158,6 @@ button{
     color: var(--color-light);
     font-weight: 400;
     font-size: 20px;
-    width: 376px;
     margin-bottom: 42px;
 }
 .hero-logos{
@@ -241,7 +235,7 @@ button{
 .learning-list{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 36px;
+    gap: 36px;
     list-style: none;
     padding: 0;
 }
@@ -351,8 +345,9 @@ button{
     flex-direction: row;
     align-items: end;
 }
-.footer-div{
+.footer-div:not(:last-child){
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 .footer-list{
@@ -366,24 +361,30 @@ button{
     display: flex;
     justify-content: right;
 }
+.border{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 .footer-item{
     display: flex;
     align-items: center;
     gap: 20px;
+    text-wrap: nowrap;
 }
 .footer-logo{
-    display: flex;
-    height: 70px;
-    margin-top: 44px;
-}
-/* .adress::before{
-    content: '';
     display: block;
+    width: 183px;
+    height: 70px;
+    margin-right: 80px;
+}
+.border::before{
+    content: '';
     width: 2px;
     height: 153px;
-    background-image: url(../images/line-after.png);
-    margin-left: 81px;
-} */
+    margin-right: 80px;
+    background-color: var(--color-light);
+}
 .gmail{
     color: var(--color-light);
     font-weight: 400;
@@ -403,4 +404,6 @@ button{
     font-weight: 400;
     font-size: 14px;
     text-align: center;
+    margin-top: -5px;
+    margin-left: 474px;
 }
