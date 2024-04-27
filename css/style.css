@@ -121,7 +121,9 @@
 }
 .hero-link{
     display: inline-block;
-    padding: 7px 28px 7px 27px;
+    width: 270px;
+    height: 80px;
+    padding: 10px 30px;
     color: var(--color-border);
     background-color: var(--color-button);
     border: 3px solid #26c7ea;
@@ -129,7 +131,6 @@
     font-weight: 400;
     font-size: 24px; 
     text-align: center;
-    width: 199px;
 }
 .hero-inst{
     margin-bottom: 24px;
